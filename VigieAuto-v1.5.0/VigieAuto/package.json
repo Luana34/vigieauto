@@ -1,0 +1,17 @@
+{
+  "name": "vigieauto",
+  "version": "1.5.0",
+  "private": true,
+  "type": "module",
+  "description": "Carnet de bord automobile local et hors ligne, sans dépendance.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "test:interface": "node tests/interface.cjs && node tests/trajets.cjs && node tests/gps-interface.cjs",
+    "test:archive": "python3 tests/archives.test.py",
+    "test:migration": "node tests/migration.cjs",
+    "test:catalogue": "node tests/catalogue-interface.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.55.0"
+  }
+}
